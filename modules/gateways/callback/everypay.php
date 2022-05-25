@@ -1,9 +1,16 @@
 <?php
+
+
+use WHMCS\Module\Gateway;
+use WHMCS\Terminus;
+
+/** @type WHMCS\Application $whmcs */
+
 # Required File Includes
-include("../../../dbconnect.php");
-include("../../../includes/functions.php");
-include("../../../includes/gatewayfunctions.php");
-include("../../../includes/invoicefunctions.php");
+include "../../../init.php";
+include ROOTDIR . DIRECTORY_SEPARATOR . 'includes/functions.php';
+include ROOTDIR . DIRECTORY_SEPARATOR . 'includes/gatewayfunctions.php';
+include ROOTDIR . DIRECTORY_SEPARATOR . 'includes/invoicefunctions.php';
 
 $gatewaymodule = "everypay";
 
